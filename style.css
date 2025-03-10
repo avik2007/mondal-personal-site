@@ -49,11 +49,12 @@ section {
 }
 
 .personal-photo {
-    max-width: 150px;
-    border-radius: 50%;
+    width: 150px;  /* Set a fixed width */
+    height: 150px; /* Set the same value for height to make it square */
+    border-radius: 10px; /* Adjust the value to decrease/increase rounded corners */
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    object-fit: cover; /* Ensure the image covers the frame while maintaining aspect ratio */
 }
-
 footer {
     background-color: #30475e;
     color: white;
